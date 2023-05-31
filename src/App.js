@@ -6,7 +6,7 @@ import SearchAppBar from "./Components/AppBar";
 function App() {
   return (
     <>
-      <Router basename="/">
+      <Router basename={process.env.PUBLIC_URL}>
         <SearchAppBar />
         <Routes>
           <Route path="/" element={<Home />} />
